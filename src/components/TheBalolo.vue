@@ -4,7 +4,8 @@
       <source src="../video/video1.mp4" type="video/mp4" />
       Ваш браузер не поддерживает тег video.
     </video>
-    <div class="md:py-[100px] relative md:px-[20px] md:w-[420px] mx-auto  md:mt-[150px] w-[360px] z-50">
+    <div class="md:py-[100px] relative md:px-[20px] md:w-[420px] mx-auto  md:mt-[150px] w-[360px] ">
+      <h2 class="text-white text-center capitalize font-semibold md:font-bold text-xl md:text-2xl md:mb-10 mb-6">Programs that i use</h2>
       <div class="grid grid-cols-3 gap-[10px]">
           <div class="w-[100px] h-[50px] mx-auto aos-init aos-animate " data-aos="fade-up-right" data-aos-duration="1500">
             <img src="../assets/p7.jpg" alt="img">

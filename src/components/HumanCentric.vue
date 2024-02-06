@@ -14,6 +14,9 @@
               alt="img"
             />
           </div>
+          <div class="absolute md:top-[130px] top-[110px] left-[20px] md:left-[-10px] aos-init aos-animate" data-aos="fade-right" data-aos-duration="1500">
+            <h2 class="text-white capitalize font-semibold md:font-bold text-xl md:text-2xl ">years of</h2>
+          </div>
           <div class="aos-init aos-animate" data-aos="fade-left" data-aos-duration="1500">
             <p
               class="text-[#0AD4DE] absolute top-[-60px] right-[-50px] md:right-[-90px] font-semibold md:font-bold text-xl md:text-2xl"

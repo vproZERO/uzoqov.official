@@ -8,11 +8,12 @@
     <FilmMakers/>
     <TheBalolo/>
     <Podcast/>
-    <VisitMy/>
+    <VisitMy @open-drawer="openDrawer"/>
     <Footer/>
+    <Drawer v-if="drawer"/>
   </div>
 </template>
-<script>
+<script setup>
 import About from './components/About.vue';
 import Header from './components/Header.vue';
 import MyWork from './components/MyWork.vue'
@@ -23,20 +24,26 @@ import VisitMy from './components/VisitMy.vue'
 import Podcast from './components/Podcast.vue'
 import MyBrands from './components/MyBrands.vue';
 import Footer from './components/Footer.vue';
-export default {
-  components:{
-    Header,
-    About,
-    MyWork,
-    TheBalolo,
-    HumanCentric,
-    FilmMakers,
-    VisitMy,
-    Podcast,
-    MyBrands,
-    Footer
-  }
+import Drawer from './components/Drawer.vue'
+
+import { provide, ref } from 'vue'
+
+const drawer = ref(false)
+
+const openDrawer = () => {
+  drawer.value = true
 }
+const closeDrawer = () => {
+  drawer.value = false
+}
+
+provide('drawer', {
+  closeDrawer,
+  openDrawer,
+  
+})
+
+
 </script>
 <style lang="">
   
